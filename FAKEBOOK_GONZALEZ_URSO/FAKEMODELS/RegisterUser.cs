@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FAKEMODELOS
+namespace FAKEMODELS
 {
     public class RegisterUser
     {
@@ -121,10 +121,12 @@ namespace FAKEMODELOS
         }
         */
 
+        public bool IsValid()
+        {
+            bool isValid = (string.Compare(this.mail, this.confirmMail) == 0);
+            isValid = isValid && (string.Compare(this.password, this.confirmPassword) == 0);
 
-
-
-
-
+            return isValid;
+        }
     }
 }

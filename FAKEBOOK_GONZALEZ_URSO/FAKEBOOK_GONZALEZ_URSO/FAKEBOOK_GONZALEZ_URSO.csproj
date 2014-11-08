@@ -121,6 +121,10 @@
       <Project>{83C10821-9810-4D02-9CF8-C08949612F27}</Project>
       <Name>FAKECONTROLLERS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FAKEMODELS\FAKEMODELS.csproj">
+      <Project>{3E8E8195-39A6-43B5-959F-EC7DDDF38002}</Project>
+      <Name>FAKEMODELS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

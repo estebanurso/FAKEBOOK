@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace FAKEMODELO
+namespace FAKEMODELS
 {
     public class Publicaciones
     {
-        private Usuario User;
+        private User user;
         private int id;
         private string imágen;
         private string publicacion;
@@ -15,10 +15,10 @@ namespace FAKEMODELO
         List<Comentario> ListaDeComentarios;
 
 
-        public Usuario User1
+        public User User
         {
-            get { return User; }
-            set { User = value; }
+            get { return user; }
+            set { user = value; }
         }
         
 
@@ -58,19 +58,19 @@ namespace FAKEMODELO
 
 
 
-        public Publicaciones(Usuario user, string publica, string fecha)
+        public Publicaciones(User user, string publica, string fecha)
         {
-            User1 = user;
+            User = user;
             Publicacion = publica;
             Fechadepublicacion = fecha;
             ListaDeComentarios = new List<Comentario>();
             Id = 0;
         }
 
-        public Publicaciones(Usuario user, string publica, string img, string fecha)
+        public Publicaciones(User user, string publica, string img, string fecha)
         {
 
-            User1 = user;
+            User = user;
             Publicacion = publica;
             Fechadepublicacion = fecha;
             Imágen = img;
@@ -82,7 +82,7 @@ namespace FAKEMODELO
         public Publicaciones()
         {
             Fechadepublicacion = "";
-            User1 = null;
+            User = null;
             Publicacion = "";
             Imágen = "";
             Id = 0;

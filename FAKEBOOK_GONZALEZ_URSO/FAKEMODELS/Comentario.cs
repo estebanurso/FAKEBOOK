@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace FAKEMODELO
+namespace FAKEMODELS
 {
     public class Comentario
     {
-        private Usuario user;
+        private User user;
         private Publicaciones publicacion;
         private int id;
         private string coment;
-        private string fecha;   
+        private string fecha;
 
-        public Usuario User
+        public User User
         {
             get { return user; }
             set { user = value; }
@@ -47,7 +47,7 @@ namespace FAKEMODELO
             set { fecha = value; }
         }
 
-        public Comentario(Usuario user, Publicaciones publicacion, string coment, string fecha, int id)
+        public Comentario(User user, Publicaciones publicacion, string coment, string fecha, int id)
         {
 
             User = user;

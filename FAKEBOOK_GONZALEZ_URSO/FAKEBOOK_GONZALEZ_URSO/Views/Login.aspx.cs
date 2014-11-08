@@ -27,6 +27,10 @@ namespace FAKEBOOK_GONZALEZ_URSO
                 {
                     Response.Redirect("index.aspx");
                 }
+                else
+                {
+                    PassTxt.Text = string.Empty;
+                }
             }
 
 

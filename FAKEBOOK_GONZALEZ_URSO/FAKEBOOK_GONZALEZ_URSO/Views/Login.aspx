@@ -41,7 +41,10 @@
         <asp:Image ID="Image2" runat="server" Height="36px" 
             ImageUrl="~/Styles/Images/CONTRASEÑA.jpg" Width="209px" />
 &nbsp;
-        <asp:TextBox ID="PassTxt" runat="server" Height="35px"></asp:TextBox>
+        <asp:TextBox ID="PassTxt" TextMode="Password" runat="server" Height="35px" ControlToValidate="PassTxt"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="PasswordRequiredValidator" runat="server" 
+            ErrorMessage="Este campo es Requerido" ValidationGroup="LoguinValidationGroup" 
+            ControlToValidate="PassTxt" />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />

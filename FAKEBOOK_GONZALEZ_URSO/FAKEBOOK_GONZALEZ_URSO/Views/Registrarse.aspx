@@ -15,37 +15,37 @@
     <tr>
     <td><p> NOMBRE </p></td>
     <td>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="FirstName" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>
     <td><p> APELLIDO </p></td>
     <td>
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LastName" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>
     <td><p> E-MAIL </p></td>
     <td>
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Email" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>
     <td><p> REPITA SU E-MAIL </p></td>
     <td>
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <asp:TextBox ID="ConfirmMail" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>
     <td><p> CONTRASEÑA </p></td>
     <td>
-        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Password" runat="server"></asp:TextBox>
         </td>
     </tr>
     <tr>
     <td><p> REPITA SU CONTRASEÑA </p></td>
     <td>
-        <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+        <asp:TextBox ID="ConfirmPassword" runat="server"></asp:TextBox>
         </td>
     </tr>
     </table>
@@ -55,7 +55,8 @@
     <br />
     <br />
     <asp:ImageButton ID="ImageButton1" runat="server" 
-        ImageUrl="~/IMAGENES/REGISTRAR.jpg" Width="327px" />
+        ImageUrl="~/Styles/Images/REGISTRAR.jpg" Width="327px" 
+        onclick="ImageButton1_Click" />
     </form>
 </body>
 </html>
